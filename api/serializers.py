@@ -8,7 +8,7 @@ from django.contrib.auth.password_validation import validate_password
 class BookSerializer(serializers.ModelSerializer):
     class Meta:
         model = Book
-        fields = ('pk', 'title', 'author', 'description', 'year', 'rating')
+        fields = ('pk', 'title', 'author', 'genre', 'description', 'year', 'rating')
 
 
 class RegisterSerializer(serializers.ModelSerializer):
